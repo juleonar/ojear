@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Contacto | Ojear</title>
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Manrope&family=Public+Sans&display=swap" rel="stylesheet">
+	<!-- CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- SCSS -->
+    <link rel="stylesheet" href="scss/estilos.scss">
+	<!-- SEO -->
+	<meta name="description" content="Ojear ofrece una amplia variedad de gafas de sol que otorgan una correcta protección y se ajustan a las últimas tendencias de moda y diseño.">
+	<meta name="keywords"  content="gafas, sol, moda, diseño, moda">	
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="body">
+	<header>
+		<!-- nav -->
+		<div class="nav">
+			<!-- logo -->
+			<a href="index.html" class="logo"><img src="imagenes/iconos/logo.png"></a>
+
+			<label class="label-nav" for="toggle">&#9776;</label>
+			<input class="input-nav" type="checkbox" id="toggle"/>	
+
+			<!-- menu -->
+			<div class="menu">
+				<a href="index.html">incio</a>
+				<a href="colecciones.html">colecciones</a>
+				<a href="tienda.html">tienda</a>
+				<a href="nosotros.html">nosotros</a>
+				<a href="contacto.html">contacto</a>
+			</div>
+		</div>
+	</header>
+
+	<!-- container -->
+	<div class="container">
+		<div class="container-form">	
+			<div class="texto-form">
+				<h1>¿Nos contactas?</h1>
+				<p>Tu mensaje será recibido<br> e intentaremos en un plazo de 48hs.</p>
+			</div>
+
+			<!-- formulario -->
+			<div class="form">
+				<form action="#" method="POST">			
+					<div>
+						<div>
+							<label for="name">Nombre</label>
+							<input type="text" id="name" placeholder="Nombre" name="nombre" required>	
+						</div>
+
+						<div>					
+							<label for="email">Email</label>	
+							<input type="email" id="email" name="email" placeholder="email@ejemplo.com" required>
+						</div>
+
+						<div>
+							<label for="reason">Motivo</label>
+							<select id="reason">
+								<option selected disabled>Seleccione una opción</option>
+								<option>Productos</option>
+								<option>Envíos</option>
+								<option>Reclamos</option>
+								<option>Otros</option>
+							</select>
+						</div>
+
+						<div>
+							<label for="comments">Comentarios</label>
+							<textarea placeholder="Escribe tu consulta aqui" id="comments"></textarea>
+						</div>
+						
+						<div class="boton-enviar">
+							<button type="button">enviar</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- footer -->
+	<footer class="footer">
+		<div>
+			<div class="icons">
+				<img src="imagenes/iconos/fb.png">
+				<img src="imagenes/iconos/ig.png">
+				<img src="imagenes/iconos/tw.png">
+			</div>
+			
+			<div class="copyright">
+				&copy; 2020. Todos los derechos reservados.
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

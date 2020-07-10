@@ -1,0 +1,508 @@
+/*-------------- general --------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif; }
+
+/*body*/
+body {
+  background: linear-gradient(0deg, #999693, #555758);
+  min-height: 100vh;
+  animation-name: show;
+  animation-duration: 2s;
+  color: #ffffff; }
+  body h1, body h2, body h3 {
+    font-family: 'Public Sans', sans-serif;
+    letter-spacing: 1px; }
+  body p {
+    font-weight: lighter; }
+
+@keyframes show {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 10; } }
+
+/*header*/
+header {
+  min-width: 95%;
+  padding: 2rem; }
+  header .logo img {
+    height: 75px;
+    width: 150px;
+    float: left; }
+  header .nav {
+    text-align: right;
+    height: 70px;
+    line-height: 70px; }
+    header .nav .menu a {
+      clear: right;
+      text-decoration: none;
+      color: #bbb8b8;
+      line-height: 70px;
+      padding: 1rem;
+      padding-right: 2rem;
+      transition: 0.7s all; }
+    header .nav .menu a:hover {
+      color: #ffffff;
+      font-size: bolder; }
+  header .label-nav {
+    font-size: 30px;
+    line-height: 70px;
+    width: 25px;
+    float: right;
+    cursor: pointer;
+    color: #bbb8b8; }
+  header .label-nav:hover {
+    color: #ffffff;
+    font-size: bolder; }
+  header #toggle {
+    display: none; }
+
+/*footer*/
+.footer {
+  width: 95%;
+  height: 50px;
+  margin: 2rem;
+  margin-top: 2rem;
+  bottom: 0;
+  position: fixed; }
+  .footer div {
+    display: inline;
+    justify-content: space-between;
+    display: flex;
+    align-items: center; }
+  .footer .icons img {
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    margin-right: 1rem; }
+  .footer .icons img:hover {
+    transform: scale(1.05);
+    opacity: 80%; }
+  .footer .copyright {
+    font-size: 12pt;
+    color: #c5c2c2;
+    float: right; }
+
+/*-------------- secciones --------------*/
+/*index*/
+.body-index {
+  background: url("../imagenes/bg.jpg") no-repeat center center fixed;
+  background-size: cover; }
+
+.container-index {
+  padding: 10rem;
+  vertical-align: middle;
+  place-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+  .container-index h1 {
+    font-size: 62px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    margin-bottom: 0.5em;
+    text-align: center; }
+  .container-index p {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 5em; }
+  .container-index .boton-index {
+    color: #ffffff;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background-color: none;
+    border: solid 1px #ffffff;
+    border-radius: 30px;
+    text-decoration: none; }
+  .container-index .boton-index:hover {
+    background-color: #ffffff;
+    font-weight: bolder;
+    color: #000000;
+    transition: all 0.3s ease 0s; }
+  .container-index .boton:hover {
+    background-color: #ffffff;
+    border-radius: 30px;
+    opacity: 80%; }
+
+/*colecciones*/
+.container-colecciones {
+  padding: 5rem 0rem 5rem 0rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .container-colecciones h1, .container-colecciones h2 {
+    font-size: 21px; }
+  .container-colecciones h2 {
+    text-align: right; }
+  .container-colecciones img {
+    margin: 2px;
+    padding: 0.3rem;
+    border-radius: 8px; }
+  .container-colecciones img:hover {
+    opacity: 90%; }
+
+/*tienda*/
+.container-tienda {
+  width: 85%;
+  margin: auto;
+  padding: 1rem; }
+  .container-tienda h1 {
+    padding: 1rem; }
+  .container-tienda .productos, .container-tienda .container-tienda, .container-tienda h1 {
+    width: 85%;
+    margin: auto; }
+  .container-tienda .productos {
+    padding-bottom: 2srem;
+    position: center;
+    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: auto;
+    gap: 1em; }
+  .container-tienda .productos div {
+    display: flex;
+    display: inline-block;
+    justify-content: center;
+    padding: 1rem; }
+  .container-tienda .productos label {
+    display: block;
+    justify-content: center; }
+  .container-tienda .producto img {
+    width: 180px;
+    height: 150px;
+    border-radius: 5px;
+    object-fit: cover;
+    object-position: center center; }
+  .container-tienda .productos img:hover {
+    opacity: 80%; }
+  .container-tienda .precio {
+    font-weight: bolder; }
+  .container-tienda .talle {
+    background-color: #4E4E4E;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    opacity: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 20% 40%;
+    column-gap: 1em;
+    align-items: center; }
+    .container-tienda .talle h2, .container-tienda .talle p {
+      display: inline-block;
+      padding-right: 2rem;
+      text-align: left; }
+    .container-tienda .talle p {
+      line-height: 25px;
+      font-weight: lighter; }
+
+/*nosotros*/
+.container-integrantes {
+  max-width: 50%;
+  margin: 0 auto; }
+  .container-integrantes h1 {
+    padding-bottom: 1rem; }
+  .container-integrantes p {
+    line-height: 30px; }
+  .container-integrantes .integrantes {
+    display: flex;
+    justify-content: space-between; }
+    .container-integrantes .integrantes div {
+      display: inline-block;
+      padding: 2rem; }
+    .container-integrantes .integrantes img {
+      width: 200px;
+      height: 200px;
+      overflow: hidden;
+      border-radius: 100%;
+      margin: 1rem; }
+    .container-integrantes .integrantes #micaela, .container-integrantes .integrantes #federico, .container-integrantes .integrantes #antonella {
+      text-align: center; }
+
+/*contacto*/
+.container-form {
+  color: #ffffff;
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 5rem;
+  display: flex;
+  justify-self: start; }
+  .container-form div {
+    display: inline-block;
+    padding: 2rem;
+    justify-content: center; }
+  .container-form .texto-form {
+    line-height: 28pxx;
+    width: 500x; }
+    .container-form .texto-form h1 {
+      padding-bottom: 1rem; }
+  .container-form .form {
+    background-color: none;
+    border: solid 1px #ffffff;
+    border-radius: 2%;
+    padding: 3rem;
+    width: 350px;
+    height: 480px;
+    display: flex;
+    justify-content: center; }
+    .container-form .form div {
+      padding: 0.5rem;
+      margin: 2px;
+      display: flex;
+      display: block;
+      justify-content: center; }
+    .container-form .form input, .container-form .form select, .container-form .form textarea {
+      width: 250px;
+      border: none;
+      border-radius: 5px; }
+    .container-form .form input, .container-form .form select {
+      height: 25px; }
+    .container-form .form textarea {
+      height: 80px; }
+    .container-form .form select {
+      color: grey; }
+    .container-form .form .boton-enviar button {
+      background-color: #5c5c5c;
+      color: #ffffff;
+      font-size: 18px;
+      border: none;
+      border-radius: 30px;
+      width: 80px;
+      height: 30px;
+      cursor: pointer; }
+    .container-form .form .boton-enviar:hover {
+      opacity: 80%; }
+
+/*-------------- responsive --------------*/
+@media only screen and (max-width: 768px) {
+  /*nav*/
+  header .label-nav {
+    font-size: 45px;
+    line-height: 70px;
+    width: 25px;
+    float: right;
+    cursor: pointer;
+    color: #bbb8b8; }
+  header .label-nav:hover {
+    color: #ffffff;
+    font-size: bolder; }
+  header .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+    background-color: #8a8585;
+    position: relative;
+    border-radius: 15px;
+    font-size: 21px; }
+    header .menu a {
+      display: block;
+      margin: 0; }
+  header #toggle:checked + .menu {
+    display: block; }
+  /*index*/
+  .body-index {
+    background: url("../imagenes/bg.jpg") right;
+    background-size: cover; }
+  .container-index {
+    padding: 10rem;
+    vertical-align: middle;
+    place-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+    .container-index .h1-index {
+      font-size: 75px;
+      font-weight: lighter;
+      letter-spacing: 1px;
+      margin-bottom: 0.5em;
+      text-align: center; }
+    .container-index .p-index {
+      font-size: 18px;
+      line-height: 25px;
+      text-align: center;
+      margin-bottom: 5em; }
+    .container-index .boton-index {
+      padding: 1rem 2rem 1rem 2rem;
+      border: solid 1px #ffffff;
+      color: #ffffff;
+      font-size: 21px;
+      font-weight: bolder;
+      border-radius: 30px;
+      text-decoration: none; }
+    .container-index .boton:hover {
+      background-color: #ffffff;
+      border-radius: 30px;
+      opacity: 80%; }
+  /*colecciones*/
+  .container-colecciones {
+    width: 100%; }
+    .container-colecciones .colecciones {
+      display: grid;
+      grid-template-columns: repeat(2, 0fr);
+      grid-auto-rows: auto; }
+    .container-colecciones h1, .container-colecciones h2 {
+      font-size: 21px; }
+    .container-colecciones h2 {
+      text-align: right; }
+    .container-colecciones img {
+      border-radius: 8px;
+      height: 230px;
+      width: 230px;
+      object-fit: cover;
+      object-position: center; }
+    .container-colecciones img:hover {
+      opacity: 90%; }
+    .container-colecciones #large1 {
+      object-fit: cover;
+      object-position: right; }
+    .container-colecciones #large2 {
+      object-fit: cover;
+      object-position: left; }
+  /*tienda*/
+  .container-tienda {
+    width: 85%;
+    margin: auto;
+    padding: 1rem; }
+    .container-tienda h1 {
+      padding: 1rem; }
+    .container-tienda .productos, .container-tienda .container-tienda, .container-tienda h1 {
+      width: 85%;
+      margin: auto; }
+    .container-tienda .productos {
+      padding-bottom: 2srem;
+      position: center;
+      align-content: center;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: auto; }
+    .container-tienda .productos div {
+      display: flex;
+      display: inline-block;
+      justify-content: center;
+      padding: 0.5rem; }
+    .container-tienda .productos label {
+      display: block;
+      justify-content: center; }
+    .container-tienda .producto img {
+      width: 200px;
+      height: 180px;
+      border-radius: 5px;
+      object-fit: cover;
+      object-position: center center; }
+    .container-tienda .productos img:hover {
+      opacity: 80%; }
+    .container-tienda .precio {
+      font-weight: bolder; }
+    .container-tienda .talle {
+      background-color: #4E4E4E;
+      width: 100;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      padding: 2rem;
+      opacity: 70%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: grid;
+      grid-template-columns: 30% 60%;
+      column-gap: 1em;
+      align-items: center; }
+    .container-tienda .talle h2, .container-tienda p {
+      display: inline-block;
+      padding-right: 2rem;
+      text-align: left; }
+    .container-tienda .talle p {
+      line-height: 25px;
+      font-weight: lighter; }
+  /*nosotros*/
+  .container-integrantes {
+    max-width: 70%;
+    margin: 0 auto;
+    margin-top: 3rem; }
+    .container-integrantes h1 {
+      padding-bottom: 1rem; }
+    .container-integrantes p {
+      line-height: 30px; }
+    .container-integrantes .integrantes {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: auto; }
+      .container-integrantes .integrantes img {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%; }
+      .container-integrantes .integrantes #micaela, .container-integrantes .integrantes #federico, .container-integrantes .integrantes #antonella {
+        text-align: center; }
+  /*contacto*/
+  .container-form {
+    margin: 0 auto;
+    padding-top: 1rem;
+    display: block; }
+  .texto-form {
+    line-height: 28px;
+    width: 350px;
+    text-align: center; }
+    .texto-form h1 {
+      padding-bottom: 1rem;
+      text-align: center; }
+  .form {
+    background-color: none;
+    border: solid 1px #ffffff;
+    border-radius: 2%;
+    padding: 3rem;
+    width: 350px;
+    height: 500px;
+    display: flex;
+    justify-content: center; }
+    .form div {
+      padding: 0.5rem;
+      margin: 2px;
+      display: flex;
+      display: block;
+      justify-content: center; }
+    .form input, .form select, .form textarea {
+      width: 250px;
+      border: none;
+      border-radius: 5px; }
+    .form input, .form select {
+      height: 25px; }
+    .form textarea {
+      height: 80px; }
+    .form select {
+      color: grey; }
+    .form .boton-enviar button {
+      background-color: #5c5c5c;
+      color: #ffffff;
+      font-size: 18px;
+      border: none;
+      border-radius: 30px;
+      width: 80px;
+      height: 30px;
+      cursor: pointer; }
+    .form .boton-enviar:hover {
+      opacity: 80%; }
+  /*footer*/
+  footer .container-footer {
+    height: 5rem;
+    bottom: 0;
+    position: relative;
+    align-items: center; }
+  footer .icons {
+    margin: 20px 5px; }
+    footer .icons img {
+      width: 50px;
+      height: 50px;
+      cursor: pointer; }
+  footer .copyright {
+    font-size: 12pt;
+    color: #acabab;
+    padding: 0.5rem 1rem;
+    display: inline-block; } }
